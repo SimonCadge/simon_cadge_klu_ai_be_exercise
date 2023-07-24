@@ -1,0 +1,24 @@
+[package]
+name = "simon_cadge_klu_ai_be_exercise"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "server"
+
+[[bin]]
+name = "debug_requester"
+
+[dependencies]
+env_logger = "0.10.0"
+log = "0.4.19"
+rand = "0.8.5"
+reqwest = { version = "0.11.18", features = ["json"] }
+rocket = { version = "=0.5.0-rc.3", features = ["json"] }
+serde = { version = "1.0.174", features = ["derive"] }
+serde_json = "1.0.103"
+time = { version = "0.3.23", features = ["serde"] }
+tokio = { version = "1.29.1", features = ["full"] }
+tokio-stream = "0.1.14"
