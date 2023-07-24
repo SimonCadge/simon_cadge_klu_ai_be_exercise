@@ -1,5 +1,6 @@
 # Mock Chat Completions API
 Simon Cadge's submission for the Klu Backend Exercise. A simple web server which mimics the openai Chat Completions API, using the dataset found [here](https://huggingface.co/datasets/anon8231489123/ShareGPT_Vicuna_unfiltered/blob/main/ShareGPT_V3_unfiltered_cleaned_split.json).  
+**Since the dataset is large it isn't included in this Git repository. When running the program yourself you must first download the dataset and put it into a folder called 'data' in the root of the project.**  
 The project is written in Rust, with two separate binaries. 
 - 'server', which runs the webserver.
 - 'debug_requester', which makes asynchronous requests for every possible valid Assistant message in the dataset, checks the responses for validity and benchmarks performance.
